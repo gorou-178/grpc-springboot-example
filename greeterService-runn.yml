@@ -1,0 +1,14 @@
+runners:
+  greq:
+    addr: localhost:9090
+    importPaths:
+      - proto
+steps:
+  - greq:
+      GreeterService/SayHello:
+        message:
+          name: World
+    test: |
+      current.res.headers['content-type'][0] == "application/grpc"
+      && compare(current.res.message, {"message":"Hello, World!"})
+      && current.res.status == 0
