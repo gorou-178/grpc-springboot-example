@@ -20,12 +20,12 @@ public final class Greeter {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string name = 1 [json_name = "name"];</code>
+     * <code>string name = 1 [json_name = "name", (.buf.validate.field) = { ... }</code>
      * @return The name.
      */
     java.lang.String getName();
     /**
-     * <code>string name = 1 [json_name = "name"];</code>
+     * <code>string name = 1 [json_name = "name", (.buf.validate.field) = { ... }</code>
      * @return The bytes for name.
      */
     com.google.protobuf.ByteString
@@ -71,7 +71,7 @@ public final class Greeter {
     @SuppressWarnings("serial")
     private volatile java.lang.Object name_ = "";
     /**
-     * <code>string name = 1 [json_name = "name"];</code>
+     * <code>string name = 1 [json_name = "name", (.buf.validate.field) = { ... }</code>
      * @return The name.
      */
     @java.lang.Override
@@ -88,7 +88,7 @@ public final class Greeter {
       }
     }
     /**
-     * <code>string name = 1 [json_name = "name"];</code>
+     * <code>string name = 1 [json_name = "name", (.buf.validate.field) = { ... }</code>
      * @return The bytes for name.
      */
     @java.lang.Override
@@ -434,7 +434,7 @@ public final class Greeter {
 
       private java.lang.Object name_ = "";
       /**
-       * <code>string name = 1 [json_name = "name"];</code>
+       * <code>string name = 1 [json_name = "name", (.buf.validate.field) = { ... }</code>
        * @return The name.
        */
       public java.lang.String getName() {
@@ -450,7 +450,7 @@ public final class Greeter {
         }
       }
       /**
-       * <code>string name = 1 [json_name = "name"];</code>
+       * <code>string name = 1 [json_name = "name", (.buf.validate.field) = { ... }</code>
        * @return The bytes for name.
        */
       public com.google.protobuf.ByteString
@@ -467,7 +467,7 @@ public final class Greeter {
         }
       }
       /**
-       * <code>string name = 1 [json_name = "name"];</code>
+       * <code>string name = 1 [json_name = "name", (.buf.validate.field) = { ... }</code>
        * @param value The name to set.
        * @return This builder for chaining.
        */
@@ -480,7 +480,7 @@ public final class Greeter {
         return this;
       }
       /**
-       * <code>string name = 1 [json_name = "name"];</code>
+       * <code>string name = 1 [json_name = "name", (.buf.validate.field) = { ... }</code>
        * @return This builder for chaining.
        */
       public Builder clearName() {
@@ -490,7 +490,7 @@ public final class Greeter {
         return this;
       }
       /**
-       * <code>string name = 1 [json_name = "name"];</code>
+       * <code>string name = 1 [json_name = "name", (.buf.validate.field) = { ... }</code>
        * @param value The bytes for name to set.
        * @return This builder for chaining.
        */
@@ -572,12 +572,12 @@ public final class Greeter {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string message = 1 [json_name = "message"];</code>
+     * <code>string message = 1 [json_name = "message", (.buf.validate.field) = { ... }</code>
      * @return The message.
      */
     java.lang.String getMessage();
     /**
-     * <code>string message = 1 [json_name = "message"];</code>
+     * <code>string message = 1 [json_name = "message", (.buf.validate.field) = { ... }</code>
      * @return The bytes for message.
      */
     com.google.protobuf.ByteString
@@ -623,7 +623,7 @@ public final class Greeter {
     @SuppressWarnings("serial")
     private volatile java.lang.Object message_ = "";
     /**
-     * <code>string message = 1 [json_name = "message"];</code>
+     * <code>string message = 1 [json_name = "message", (.buf.validate.field) = { ... }</code>
      * @return The message.
      */
     @java.lang.Override
@@ -640,7 +640,7 @@ public final class Greeter {
       }
     }
     /**
-     * <code>string message = 1 [json_name = "message"];</code>
+     * <code>string message = 1 [json_name = "message", (.buf.validate.field) = { ... }</code>
      * @return The bytes for message.
      */
     @java.lang.Override
@@ -986,7 +986,7 @@ public final class Greeter {
 
       private java.lang.Object message_ = "";
       /**
-       * <code>string message = 1 [json_name = "message"];</code>
+       * <code>string message = 1 [json_name = "message", (.buf.validate.field) = { ... }</code>
        * @return The message.
        */
       public java.lang.String getMessage() {
@@ -1002,7 +1002,7 @@ public final class Greeter {
         }
       }
       /**
-       * <code>string message = 1 [json_name = "message"];</code>
+       * <code>string message = 1 [json_name = "message", (.buf.validate.field) = { ... }</code>
        * @return The bytes for message.
        */
       public com.google.protobuf.ByteString
@@ -1019,7 +1019,7 @@ public final class Greeter {
         }
       }
       /**
-       * <code>string message = 1 [json_name = "message"];</code>
+       * <code>string message = 1 [json_name = "message", (.buf.validate.field) = { ... }</code>
        * @param value The message to set.
        * @return This builder for chaining.
        */
@@ -1032,7 +1032,7 @@ public final class Greeter {
         return this;
       }
       /**
-       * <code>string message = 1 [json_name = "message"];</code>
+       * <code>string message = 1 [json_name = "message", (.buf.validate.field) = { ... }</code>
        * @return This builder for chaining.
        */
       public Builder clearMessage() {
@@ -1042,7 +1042,7 @@ public final class Greeter {
         return this;
       }
       /**
-       * <code>string message = 1 [json_name = "message"];</code>
+       * <code>string message = 1 [json_name = "message", (.buf.validate.field) = { ... }</code>
        * @param value The bytes for message to set.
        * @return This builder for chaining.
        */
@@ -1139,16 +1139,19 @@ public final class Greeter {
   static {
     java.lang.String[] descriptorData = {
       "\n3proto/com/example/grpc/server/greeter/" +
-      "greeter.proto\"\"\n\014HelloRequest\022\022\n\004name\030\001 " +
-      "\001(\tR\004name\"&\n\nHelloReply\022\030\n\007message\030\001 \001(\t" +
-      "R\007message2:\n\016GreeterService\022(\n\010SayHello\022" +
-      "\r.HelloRequest\032\013.HelloReply\"\000B*\n\037com.exa" +
-      "mple.grpc.server.greeterB\007Greeterb\006proto" +
-      "3"
+      "greeter.proto\032\033buf/validate/validate.pro" +
+      "to\"@\n\014HelloRequest\0220\n\004name\030\001 \001(\tB\034\272H\031r\027\020" +
+      "\004\030\0202\021^[a-zA-Z0-9 !,]+$R\004name\"D\n\nHelloRep" +
+      "ly\0226\n\007message\030\001 \001(\tB\034\272H\031r\027\020\004\030\0202\021^[a-zA-Z" +
+      "0-9 !,]+$R\007message2:\n\016GreeterService\022(\n\010" +
+      "SayHello\022\r.HelloRequest\032\013.HelloReply\"\000B*" +
+      "\n\037com.example.grpc.server.greeterB\007Greet" +
+      "erb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          build.buf.validate.ValidateProto.getDescriptor(),
         });
     internal_static_HelloRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1162,6 +1165,12 @@ public final class Greeter {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HelloReply_descriptor,
         new java.lang.String[] { "Message", });
+    com.google.protobuf.ExtensionRegistry registry =
+        com.google.protobuf.ExtensionRegistry.newInstance();
+    registry.add(build.buf.validate.ValidateProto.field);
+    com.google.protobuf.Descriptors.FileDescriptor
+        .internalUpdateFileDescriptor(descriptor, registry);
+    build.buf.validate.ValidateProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

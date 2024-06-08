@@ -3,31 +3,24 @@ syntax = "proto3";
 option java_package = "com.example.grpc.server.greeter";
 option java_outer_classname = "Greeter";
 
-//import "validate/validate.proto";
+import "buf/validate/validate.proto";
 
 message HelloRequest {
-  string name = 1;
+  string name = 1 [(buf.validate.field).string = {
+    pattern: "^[a-zA-Z0-9 !,]+$",
+    min_len: 4,
+    max_len: 16,
+  }];
 }
 
 message HelloReply {
-  string message = 1;
+  string message = 1 [(buf.validate.field).string = {
+    pattern: "^[a-zA-Z0-9 !,]+$"
+    min_len: 4,
+    max_len: 16
+  }];
 }
 
 service GreeterService {
-  // buf:lint:ignore RPC_REQUEST_STANDARD_NAME
-  // buf:lint:ignore RPC_RESPONSE_STANDARD_NAME
   rpc SayHello (HelloRequest) returns (HelloReply) {}
 }
-
-//message HelloRequest {
-//  string name = 1 [(validate.rules).string = {
-//    pattern: "^[a-zA-Z0-9]+$",
-//    length: { min: 4, max: 64 }
-//  }];
-//}
-//
-//message HelloReply {
-//  string message = 1 [(validate.rules).string = {
-//    length: { max: 100 }
-//  }];
-//}

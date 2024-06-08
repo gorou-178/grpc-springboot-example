@@ -28,7 +28,7 @@ public object HelloReplyKt {
     internal fun _build(): com.example.grpc.server.greeter.Greeter.HelloReply = _builder.build()
 
     /**
-     * `string message = 1 [json_name = "message"];`
+     * `string message = 1 [json_name = "message", (.buf.validate.field) = { ... }`
      */
     public var message: kotlin.String
       @JvmName("getMessage")
@@ -38,7 +38,7 @@ public object HelloReplyKt {
         _builder.setMessage(value)
       }
     /**
-     * `string message = 1 [json_name = "message"];`
+     * `string message = 1 [json_name = "message", (.buf.validate.field) = { ... }`
      */
     public fun clearMessage() {
       _builder.clearMessage()

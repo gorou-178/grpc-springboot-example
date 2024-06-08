@@ -28,7 +28,7 @@ public object HelloRequestKt {
     internal fun _build(): com.example.grpc.server.greeter.Greeter.HelloRequest = _builder.build()
 
     /**
-     * `string name = 1 [json_name = "name"];`
+     * `string name = 1 [json_name = "name", (.buf.validate.field) = { ... }`
      */
     public var name: kotlin.String
       @JvmName("getName")
@@ -38,7 +38,7 @@ public object HelloRequestKt {
         _builder.setName(value)
       }
     /**
-     * `string name = 1 [json_name = "name"];`
+     * `string name = 1 [json_name = "name", (.buf.validate.field) = { ... }`
      */
     public fun clearName() {
       _builder.clearName()

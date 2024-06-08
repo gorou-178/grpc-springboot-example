@@ -95,10 +95,6 @@ public final class GreeterServiceGrpc {
   public interface AsyncService {
 
     /**
-     * <pre>
-     * buf:lint:ignore RPC_REQUEST_STANDARD_NAME
-     * buf:lint:ignore RPC_RESPONSE_STANDARD_NAME
-     * </pre>
      */
     default void sayHello(com.example.grpc.server.greeter.Greeter.HelloRequest request,
         io.grpc.stub.StreamObserver<com.example.grpc.server.greeter.Greeter.HelloReply> responseObserver) {
@@ -134,10 +130,6 @@ public final class GreeterServiceGrpc {
     }
 
     /**
-     * <pre>
-     * buf:lint:ignore RPC_REQUEST_STANDARD_NAME
-     * buf:lint:ignore RPC_RESPONSE_STANDARD_NAME
-     * </pre>
      */
     public void sayHello(com.example.grpc.server.greeter.Greeter.HelloRequest request,
         io.grpc.stub.StreamObserver<com.example.grpc.server.greeter.Greeter.HelloReply> responseObserver) {
@@ -163,10 +155,6 @@ public final class GreeterServiceGrpc {
     }
 
     /**
-     * <pre>
-     * buf:lint:ignore RPC_REQUEST_STANDARD_NAME
-     * buf:lint:ignore RPC_RESPONSE_STANDARD_NAME
-     * </pre>
      */
     public com.example.grpc.server.greeter.Greeter.HelloReply sayHello(com.example.grpc.server.greeter.Greeter.HelloRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
@@ -191,10 +179,6 @@ public final class GreeterServiceGrpc {
     }
 
     /**
-     * <pre>
-     * buf:lint:ignore RPC_REQUEST_STANDARD_NAME
-     * buf:lint:ignore RPC_RESPONSE_STANDARD_NAME
-     * </pre>
      */
     public com.google.common.util.concurrent.ListenableFuture<com.example.grpc.server.greeter.Greeter.HelloReply> sayHello(
         com.example.grpc.server.greeter.Greeter.HelloRequest request) {
